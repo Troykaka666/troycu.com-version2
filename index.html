@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link
+    rel="stylesheet"
+    type="text/css"
+    media="screen"
+    href="./styles/main.min.css"
+  />
+
+
+</head>
+<body>
+
+  <div class="homepage">
+    <div class="homepage-holder">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 mx-auto text-center">
+          <h1 class="homepage__header">Troy Wu</h1>
+          <p class="lead homepage__header-sub">Simple as This</p>
+          <a href="#" class="button button-download">
+            <span class="button__item">Download</span>
+            <span class="button__item">
+              <i class="fas fa-download"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="container-md">
+        <div class="row margint-10">
+          <!-- <div class="col-lg-2"></div>
+          <div class="col-6 col-sm-3 col-lg-2 button__holder">
+            <a href="#" class="button" data-toggle="modal" data-target="#profile">Profile</a>
+          </div>
+          <div class="col-6 col-sm-3 col-lg-2 button__holder">
+            <a href="#" class="button">Profile</a>
+          </div>
+          <div class="col-6 col-sm-3 col-lg-2 button__holder">
+            <a href="#" class="button">Profile</a>
+          </div>
+          <div class="col-6 col-sm-3 col-lg-2 button__holder">
+            <a href="#" class="button">Profile</a>
+          </div>
+          <div class="col-lg-2"></div> -->
+          <div class="container">
+            <div class="button__holder">
+                <a href="#" class="button button-1" data-toggle="modal" data-target="#profile">Profile</a>
+                <a href="#" class="button button-1" data-toggle="modal" data-target="#profile">Profile</a>
+                <a href="#" class="button button-1" data-toggle="modal" data-target="#profile">Profile</a>
+                <a href="#" class="button button-1" data-toggle="modal" data-target="#profile">Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- 
+modal fade
+       -->
+  <!-- Modal -->
+
+<div class="modal mt-5" id="profile" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+        <div class="modal__menu" >
+            <div class="container">
+              <ul id="modal-menu">
+                <li>
+                  <a href="#about" class="dot">0</a>
+                </li>
+                <li>
+                  <a href="#education" class="dot">0</a>
+                </li>
+                <li>
+                  <a href="#skillset" class="dot">0</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="container mt-5">
+            <div class="md-header" id="about">
+                <h1 class="md-header__title">About me</h1>
+                <p class="md-header__content pt-3">
+                    Newly graduated web developer offering enthusiasm and understanding of various programming languages. Looking to join an organization where the opportunity for growth and personal development is embraced
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="md-header" id="education">
+                <h1 class="md-header__title" >Education</h1>
+                <div class="container pt-3">
+                  <div class="container">
+                      <div class="md__content">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="item-h1">Bachelor of Science in Computer Science</h2>
+                            <p class="md__content__sub item-h1">FALL 2018</p>
+                        </div>
+                        <div class="row">
+                          <h3 class="ml-4">Kennesaw State University, Kennesaw GA</h3>
+                          <div class="container">
+                            <ul class="md__content__table">
+                              <li>GPA: 3.53, Cum Laude</li>
+                              <li>Coursework in Internet Programming, Data Structure, Programming Principles, User Interface Design, Database, and Algorithm Analysis </li>
+                              <li>Dean's list, KSU(2016-2018)</li>
+                              <li>Presidential International Wavier Award(2016-2018)</li>
+                              <li>The 3rd Place in Industry Award Undergraduate Research(Fall 2017)</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="md-header" id="skillset">
+                <h1 class="md-header__title">Skill Set</h1>
+               <div class="row">
+                 <div class="col-sm-12 col-md-6 col-lg-4 pt-2">
+                   <h3 class="skillset__title">Front End:</h3>
+                   <div class="container">
+                      <ul class="md__content__table">
+                        <li>HTML</li>
+                        <li>CSS / SASS</li>
+                        <li>JavaScript</li>
+                      </ul>
+                   </div>
+                 </div>
+                 <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h3 class="skillset__title">Back End:</h3>
+                    <div class="container">
+                        <ul class="md__content__table">
+                            <li>PHP</li>
+                            <li>Node.js</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                 </div>
+                 <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h3 class="skillset__title">Frameworks:</h3>
+                    <div class="container">
+                        <ul class="md__content__table">
+                          <li>Boostrap 4</li>
+                          <li>Materilize</li>
+                          <li>Express.js</li>
+                          <li>JQuery</li>
+                          <li>Angular.js<span class="lead ml-1">(Beginner level)</span></li>
+                        </ul>
+                    </div>
+                 </div>
+               <!-- </div>
+               <div class="row"> -->
+                  <div class="col-sm-12 col-md-6 col-lg-4">
+                      <h3 class="skillset__title">Tools:</h3>
+                      <div class="container">
+                          <ul class="md__content__table">
+                            <li>GIT</li>
+                            <li>VS Code</li>
+                            <li>AWS Cloud9<span class="lead ml-1">(Beginner level)</span></li>
+                            <li>Adobe XD</li>
+                            <li>Chrome</li>
+                          </ul>
+                      </div>
+                   </div>
+                   <div class="col-sm-12 col-md-6 col-lg-4">
+                      <h3 class="skillset__title">languages:</h3>
+                      <div class="container">
+                          <ul class="md__content__table">
+                            <li>English</li>
+                            <li>Chinese<span class="lead ml-1">(Native)</span></li>
+                          </ul>
+                      </div>
+                   </div>
+                   <div class="col-sm-12 col-md-6 col-lg-4">
+                     <div class="container text-center">
+                        <div class=" md__content__harmer"><i class="fas fa-hammer"></i></div>
+                        <p class="md__content__harmer-p">Building More</p>
+                     </div>
+
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+ 
+
+
+
+
+
+
+  
+  <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+  crossorigin="anonymous"></script>
+  <script src="./scripts/bundle.js"></script>
+
+  <script>
+    
+
+  </script>
+</body>
+</html>

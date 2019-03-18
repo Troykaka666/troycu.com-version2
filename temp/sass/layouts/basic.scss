@@ -1,0 +1,196 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+  }
+  
+body {
+    box-sizing: inherit;
+    position: relative;
+    // background-color: aliceblue;
+    // background-image: linear-gradient(to right, rgba(187, 187, 189, 0.452), rgba(253, 186, 186, 0.514));
+}
+
+
+/*==========================================*/
+/*================Resusable Items ====================*/
+/*==========================================*/
+.margint-10{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+/*==========================================*/
+/*================Basic Layout ====================*/
+/*==========================================*/
+.homepage{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &-holder{
+        display: block;
+        margin: 20rem auto;
+        width: 80%;
+    }
+    &__header{
+        font-size: 10rem;
+        font-family: $source;
+        font-weight: 800;
+        text-shadow: $box-shadow-1;
+        &-sub{
+            font-size: 8rem;
+        }
+    }
+}
+
+.button{
+    background-color: white;
+    color: rgb(86, 186, 245);
+    border: 0.2rem solid rgb(86, 186, 245);
+    border-radius: 5%;
+    display: inline-block;
+    position: relative;
+    // padding: 1rem 2rem;
+    text-align: center;
+    height: 5rem;
+    width: 15rem;
+    font-size: 3rem;
+    overflow: hidden;
+    flex: 0 0 20%;
+    transition: all 0.5s ease-in;
+    &__holder{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &-1{
+        margin-right: 3rem;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &:hover{
+        text-decoration: none;
+        background-color: rgb(86, 186, 245);
+        color: white;
+        border: 0.2rem solid white;
+        box-shadow: $box-shadow-2;
+    }
+    &:active{
+        box-shadow: $box-shadow-1;
+    }
+    &__item{  
+       position: relative;
+       top: 0rem;
+       transition: top 0.5s ease-in;
+    }
+}
+
+.top{
+    top: -4.5rem;
+}
+
+
+// MODAL CONTENT
+.close-btn{
+    position: sticky;
+    top: 0rem;
+    right: 50rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 3rem;
+}
+.md-header{
+    padding: 1.5rem 4rem;
+    &__title{
+        font-size: 4rem;
+        font-family: $source;
+        display: inline-block;
+        position: relative;
+        &:before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 0.1rem;
+            width: 130%;
+            background-color: black;
+        }
+    }
+    &__content{
+        font-family: $lora;
+        font-size: 2rem;
+    }
+}
+.modal__menu{
+    position: fixed;
+    top: 30%;
+    right: 5%;
+    z-index: 99999;
+}
+.md__content{
+    &__sub{
+        font-size: 1.5rem;
+    }
+    &__table{
+        padding: 1rem 4rem;
+        font-size: 2rem;
+    }
+    &__harmer{
+        font-size: 8rem;
+        transform-origin: 50% 50%;
+        transition: transform 0.5s ease-in;
+        animation: movingharmer 0.8s infinite ease;
+        &-p{
+            margin: -2rem auto 0 auto;
+            height: 8rem;
+            width: 8rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border: 0.2rem solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+            animation: pulse 0.8s infinite ease;
+        }
+    }
+}
+@keyframes movingharmer{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(55deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes pulse {
+    20% {
+      -moz-box-shadow: 0 0 0 0 black;
+      box-shadow: 0 0 0 0 black;
+    }
+    50% {
+        -moz-box-shadow: 0 0 0 0.2px black;
+        box-shadow: 0 0 0 0.2px black;
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 black;
+        box-shadow: 0 0 0 0 black;
+    }
+  }
+.skillset{
+    &__title{
+
+    }
+    &__content{
+        font-size: 2rem;
+    }
+}

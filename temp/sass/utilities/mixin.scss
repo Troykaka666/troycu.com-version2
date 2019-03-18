@@ -1,0 +1,53 @@
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@mixin atSmall {
+  @media (min-width: 660px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (min-width: 860px) {
+    @content;
+  }
+}
+
+@mixin atLarge {
+  @media (min-width: 1010px) {
+    @content;
+  }
+}
+
+@mixin themeScrollbar {
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: $shadow;
+    border-radius: 1rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(237, 214, 248),
+      rgb(255, 164, 179)
+    );
+    border-radius: 1rem;
+  }
+}
