@@ -1,0 +1,103 @@
+.project{
+    padding: 2rem 6rem;
+    &__holder{
+        display: flex;
+        padding: 0.5rem 1rem;
+        border-radius: 0%;
+        border: 0.1rem solid antiquewhite;
+    }
+    &__image{
+        flex: 0 0 50%;
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        & img{
+            width: 100%;
+            border-radius: 3%;
+        }
+        &__overlay{
+            position: absolute;
+            top: -100%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(207, 205, 205, 0.747);
+            padding: 1rem;
+            border-radius: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+    &__media{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       opacity: 0;
+       transition: opacity 0.5s ease;
+       transition-delay: 1.25s;
+       
+        &__item{
+            display: inline-block;
+            list-style-type: none;
+            padding: 0.5rem;
+            font-size: 5rem;
+            
+            & a{
+                color: black;
+                transition: all 0.5s ease;
+                &:hover{
+                   color: rgb(85, 85, 85);
+                }
+            }
+        }
+    }
+    &__image:hover &__image__overlay{
+        animation: spinin 1.2s ease;
+        top: 0;
+        left: 0;
+    }
+    &__image:hover &__media{
+        opacity: 1;
+    }
+    &__content{
+        flex: 0 0 50%;
+        &__title{
+
+        }
+        &__desc{
+
+        }
+        &__media{
+
+        }
+    }
+}
+
+@keyframes spinin{
+    0%{
+        top: -100%;
+        left: 0%; 
+    }
+    25%{
+        top: -50%;
+        left: 50%; 
+        opacity: 0;
+    }
+    50%{
+        top: -30%;
+        left: -50%;
+        opacity: 1;
+    }
+    85%{
+        top: -10%;
+        left: 50%;
+        opacity: 0;
+    }
+    100%{
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}

@@ -26,7 +26,7 @@
     <div class="homepage-holder">
       <div class="row">
         <div class="col-sm-12 col-md-6 mx-auto text-center">
-          <h1 class="homepage__header">Troy Wu</h1>
+          <h1 class="homepage__header lineartext-pink">Troy Wu</h1>
           <p class="lead homepage__header-sub">Simple as This</p>
           <a href="#" class="button button-download">
             <span class="button__item">Download</span>
@@ -38,24 +38,10 @@
       </div>
       <div class="container-md">
         <div class="row margint-10">
-          <!-- <div class="col-lg-2"></div>
-          <div class="col-6 col-sm-3 col-lg-2 button__holder">
-            <a href="#" class="button" data-toggle="modal" data-target="#profile">Profile</a>
-          </div>
-          <div class="col-6 col-sm-3 col-lg-2 button__holder">
-            <a href="#" class="button">Profile</a>
-          </div>
-          <div class="col-6 col-sm-3 col-lg-2 button__holder">
-            <a href="#" class="button">Profile</a>
-          </div>
-          <div class="col-6 col-sm-3 col-lg-2 button__holder">
-            <a href="#" class="button">Profile</a>
-          </div>
-          <div class="col-lg-2"></div> -->
           <div class="container">
             <div class="button__holder">
                 <a href="#" class="button button-1" data-toggle="modal" data-target="#profile">Profile</a>
-                <a href="#" class="button button-1" data-toggle="modal" data-target="#profile">Profile</a>
+                <a href="#" class="button button-1" data-toggle="modal" data-target="#project">Projects</a>
                 <a href="#" class="button button-1" data-toggle="modal" data-target="#profile">Profile</a>
                 <a href="#" class="button button-1" data-toggle="modal" data-target="#profile">Profile</a>
             </div>
@@ -68,9 +54,8 @@
 <!-- 
 modal fade
        -->
-  <!-- Modal -->
-
-<div class="modal fade md__content__container customeScrollbar mt-5" id="profile" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <!-- Profiile Modal -->
+<div class="modal fade md__content__container customeScrollbar" id="profile" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
   <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
         <div class="modal__menu-holder" >
@@ -204,6 +189,71 @@ modal fade
             </div>
         </div>
     </div>
+  </div>
+</div>
+
+
+<!-- Project Modal -->
+<div class="modal fade md__content__container customeScrollbar" id="project" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+        <div class="modal__menu-holder" >
+            <div class="container">
+              <ul id="modal__menu">
+                <li class="modal__menu-item ">
+                  <a href="#about">
+                    <i class="far fa-address-card"></i>
+                  </a>
+                </li>
+                <li class="modal__menu-item ">
+                  <a href="#education">
+                    <i class="fas fa-book"></i>
+                  </a>
+                </li>
+                <li class="modal__menu-item ">
+                  <a href="#skillset">
+                    <i class="fas fa-crown"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        <button type="button" class="close close-btn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="container">
+          <div class="project">
+            <div class="project__holder">
+              <div class="project__image">
+                  <img src="https://images.pexels.com/photos/2017299/pexels-photo-2017299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="">
+                  <div class="project__image__overlay">
+                    <div class="container">
+                      <ul class="project__media">
+                        <li class="project__media__item mr-5">
+                          <a href="#">
+                            <i class="fab fa-github"></i>
+                          </a>
+                        </li>
+                        <li class="project__media__item">
+                          <a href="#">
+                            <i class="fas fa-tv"></i>
+                          </a>                     
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="project__content">
+                  <div class="project__content__title">
+                    <h1>Hello World</h1>
+                  </div>
+                  <div class="project__content__desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia doloribus facilis ullam fuga excepturi commodi eveniet! Quasi soluta, repellat nemo odio consequatur non labore quidem earum, exercitationem beatae nam in.</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
   </div>
 </div>
 

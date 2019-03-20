@@ -1,0 +1,43 @@
+//BUTTONS
+.button{
+    background-color: white;
+    color: rgb(86, 186, 245);
+    border: 0.2rem solid rgb(86, 186, 245);
+    border-radius: 5%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height: 5rem;
+    width: 15rem;
+    font-size: 3rem;
+    overflow: hidden;
+    flex: 0 0 20%;
+    transition: all 0.5s ease-in;
+    &__holder{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &-1{
+        margin-right: 3rem;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    &:hover{
+        text-decoration: none;
+        background-color: rgb(86, 186, 245);
+        color: white;
+        border: 0.2rem solid white;
+        transform: translateY(-1rem);
+        box-shadow: $box-shadow-2;
+    }
+    &:active{
+        box-shadow: $box-shadow-1;
+    }
+    &__item{  
+       position: relative;
+       top: 0rem;
+       transition: top 0.5s ease-in;
+    }
+}
