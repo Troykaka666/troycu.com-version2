@@ -16,6 +16,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
+@import "./variables.scss";
+
 @mixin atSmall {
   @media (min-width: 660px) {
     @content;
@@ -39,7 +41,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     width: 0.5rem;
   }
   ::-webkit-scrollbar-track {
-    box-shadow: $shadow;
+    box-shadow: $box-shadow-1;
     border-radius: 1rem;
   }
   ::-webkit-scrollbar-thumb {

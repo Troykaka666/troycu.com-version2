@@ -20,7 +20,7 @@
 
 
 </head>
-<body>
+<body class="customeScrollbar">
 
   <div class="homepage">
     <div class="homepage-holder">
@@ -70,20 +70,26 @@ modal fade
        -->
   <!-- Modal -->
 
-<div class="modal mt-5" id="profile" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+<div class="modal fade md__content__container customeScrollbar mt-5" id="profile" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
   <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
-        <div class="modal__menu" >
+        <div class="modal__menu-holder" >
             <div class="container">
-              <ul id="modal-menu">
-                <li>
-                  <a href="#about" class="dot">0</a>
+              <ul id="modal__menu">
+                <li class="modal__menu-item ">
+                  <a href="#about">
+                    <i class="far fa-address-card"></i>
+                  </a>
                 </li>
-                <li>
-                  <a href="#education" class="dot">0</a>
+                <li class="modal__menu-item ">
+                  <a href="#education">
+                    <i class="fas fa-book"></i>
+                  </a>
                 </li>
-                <li>
-                  <a href="#skillset" class="dot">0</a>
+                <li class="modal__menu-item ">
+                  <a href="#skillset">
+                    <i class="fas fa-crown"></i>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -93,7 +99,7 @@ modal fade
         </button>
         <div class="container mt-5">
             <div class="md-header" id="about">
-                <h1 class="md-header__title">About me</h1>
+                <h1 class="md-header__title"><i class="far fa-address-card"></i>About me</h1>
                 <p class="md-header__content pt-3">
                     Newly graduated web developer offering enthusiasm and understanding of various programming languages. Looking to join an organization where the opportunity for growth and personal development is embraced
                 </p>
@@ -101,7 +107,7 @@ modal fade
         </div>
         <div class="container">
             <div class="md-header" id="education">
-                <h1 class="md-header__title" >Education</h1>
+                <h1 class="md-header__title" ><i class="fas fa-book"></i>Education</h1>
                 <div class="container pt-3">
                   <div class="container">
                       <div class="md__content">
@@ -128,7 +134,7 @@ modal fade
         </div>
         <div class="container">
             <div class="md-header" id="skillset">
-                <h1 class="md-header__title">Skill Set</h1>
+                <h1 class="md-header__title"><i class="fas fa-crown"></i>Skill Set</h1>
                <div class="row">
                  <div class="col-sm-12 col-md-6 col-lg-4 pt-2">
                    <h3 class="skillset__title">Front End:</h3>
@@ -145,6 +151,7 @@ modal fade
                     <div class="container">
                         <ul class="md__content__table">
                             <li>PHP</li>
+                            <li>Ajax</li>
                             <li>Node.js</li>
                             <li>MySQL</li>
                             <li>MongoDB</li>

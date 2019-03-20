@@ -4,5 +4,34 @@
 $lora: 'Lora', serif;
 $source: 'Source Sans Pro', sans-serif;
 
+$shadow: 0 5rem 3rem rgba(black, 0.1);
 $box-shadow-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 $box-shadow-2: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+.customeScrollbar {
+    ::-webkit-scrollbar {
+      width: 1rem;
+    }
+    ::-webkit-scrollbar-track {
+      box-shadow: $shadow;
+      border-radius: 1rem;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-image: linear-gradient(
+        to bottom,
+        rgb(185, 185, 185),
+        rgb(255, 251, 251)
+      );
+      border-radius: 1rem;
+    }
+  }
+  
+.lineartext-pink {
+color: transparent;
+background-image: linear-gradient(
+    to right,
+    rgb(196, 99, 241),
+    rgb(240, 81, 160)
+);
+background-clip: text;
+}
