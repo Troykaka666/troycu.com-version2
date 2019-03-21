@@ -36,6 +36,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
+@mixin atXLarge {
+  @media (min-width: 12000px) {
+    @content;
+  }
+}
+
 @mixin themeScrollbar {
   ::-webkit-scrollbar {
     width: 0.5rem;
