@@ -30,6 +30,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
 }
 
+@mixin atSLarge {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
 @mixin atLarge {
   @media (min-width: 1010px) {
     @content;
@@ -37,7 +43,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
 }
 
 @mixin atXLarge {
-  @media (min-width: 12000px) {
+  @media (min-width: 1200px) {
     @content;
   }
 }
