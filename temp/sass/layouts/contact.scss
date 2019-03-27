@@ -1,0 +1,115 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    padding-bottom: 20rem;
+    &-holder{
+        width: 100%;
+        @include atMedium{
+            width: 60%;
+        }
+        &-form{
+            position: relative;
+            text-align: center;
+        }
+    }
+    &__input{
+        font-size: 1.7rem;
+        @include atMedium{
+            font-size: 2.5rem;
+        }
+    }
+    &__input:focus{
+        outline: none;
+        border-bottom: 1px solid black;
+    }
+    &__input[type=text], &__input[type=email]{
+        width: 30%;
+        border: 0;
+        border-bottom: 1px solid darkgray;
+        transition: all 0.5s ease;
+        &:focus{
+            width: 50%;
+            border-color: black;
+        }
+    }
+    &__label{
+        color: gray;
+        font-family: $lora;
+        font-size: 2.2rem;
+        position: absolute;
+        top: -20%;
+        left: 25%;
+        pointer-events: none;
+        transition: all 0.5s ease;
+        @include atMedium{
+            font-size: 3rem;
+        }
+    }
+    &__input:focus ~ &__label{
+        top: -80%;
+        left: 20%;
+        font-size: 2rem;
+        opacity: 0.87;
+        color: black;
+    }
+    &__textarea{
+        width: 50%;
+        margin-top: 3rem;
+        max-height: 10rem;
+        font-size: 1.5rem;
+        border: 0;
+        border-bottom: 1px solid gray;
+        @include atMedium{
+            font-size: 2rem;
+        }
+        &-holder{
+            overflow: visible !important;
+        }
+        &:focus{
+            outline: none;
+            width: 50%;
+            border-bottom: 1.5px solid black;
+        }
+    }
+    &__textareaLB{
+        position: absolute;
+        color: gray;
+        font-family: $lora;
+        font-size: 2.2rem;
+        top: -12%;
+        left: 25%;
+        transition: all 0.5s ease;
+        @include atMedium{
+            font-size: 3rem;
+        }
+    }
+    &__textarea:focus ~ &__textareaLB{
+        margin-top: 1rem;
+        font-size: 2rem;
+        opacity: 0.87;
+        top: -30%;
+        left: 20%;
+        color: black;
+    }
+    &__submit{
+        padding: 0.5rem 1rem;
+        font-size: 3rem;
+        position: relative;
+        color: gray;
+        transition: all 0.5s ease;
+        &__icon{
+            position: absolute;
+            top: 70%;
+            margin: 0 auto;
+            z-index: 99 !important;
+            transition: top 0.5s ease-in;
+        }
+        &:hover{
+            color: black;
+        }
+        &:hover &__icon{
+            top: 40%;
+        }
+    }
+}

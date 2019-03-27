@@ -773,3 +773,110 @@ body {
       font-size: 1.5rem;
       font-family: "Lora", serif;
       padding: 0 1rem; }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3rem;
+  padding-bottom: 20rem; }
+  .contact-holder {
+    width: 100%; }
+    @media (min-width: 860px) {
+      .contact-holder {
+        width: 60%; } }
+    .contact-holder-form {
+      position: relative;
+      text-align: center; }
+  .contact__input {
+    font-size: 1.7rem; }
+    @media (min-width: 860px) {
+      .contact__input {
+        font-size: 2.5rem; } }
+  .contact__input:focus {
+    outline: none;
+    border-bottom: 1px solid black; }
+  .contact__input[type=text], .contact__input[type=email] {
+    width: 30%;
+    border: 0;
+    border-bottom: 1px solid darkgray;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .contact__input[type=text]:focus, .contact__input[type=email]:focus {
+      width: 50%;
+      border-color: black; }
+  .contact__label {
+    color: gray;
+    font-family: "Lora", serif;
+    font-size: 2.2rem;
+    position: absolute;
+    top: -20%;
+    left: 25%;
+    pointer-events: none;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    @media (min-width: 860px) {
+      .contact__label {
+        font-size: 3rem; } }
+  .contact__input:focus ~ .contact__label {
+    top: -80%;
+    left: 20%;
+    font-size: 2rem;
+    opacity: 0.87;
+    color: black; }
+  .contact__textarea {
+    width: 50%;
+    margin-top: 3rem;
+    max-height: 10rem;
+    font-size: 1.5rem;
+    border: 0;
+    border-bottom: 1px solid gray; }
+    @media (min-width: 860px) {
+      .contact__textarea {
+        font-size: 2rem; } }
+    .contact__textarea-holder {
+      overflow: visible !important; }
+    .contact__textarea:focus {
+      outline: none;
+      width: 50%;
+      border-bottom: 1.5px solid black; }
+  .contact__textareaLB {
+    position: absolute;
+    color: gray;
+    font-family: "Lora", serif;
+    font-size: 2.2rem;
+    top: -12%;
+    left: 25%;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    @media (min-width: 860px) {
+      .contact__textareaLB {
+        font-size: 3rem; } }
+  .contact__textarea:focus ~ .contact__textareaLB {
+    margin-top: 1rem;
+    font-size: 2rem;
+    opacity: 0.87;
+    top: -30%;
+    left: 20%;
+    color: black; }
+  .contact__submit {
+    padding: 0.5rem 1rem;
+    font-size: 3rem;
+    position: relative;
+    color: gray;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    .contact__submit__icon {
+      position: absolute;
+      top: 70%;
+      margin: 0 auto;
+      z-index: 99 !important;
+      -webkit-transition: top 0.5s ease-in;
+      transition: top 0.5s ease-in; }
+    .contact__submit:hover {
+      color: black; }
+    .contact__submit:hover .contact__submit__icon {
+      top: 40%; }
